@@ -1,0 +1,26 @@
+<h2 id="demo">error</h2>
+
+
+
+
+<script>
+var outParagraph = document.getElementById("demo");
+
+function checkDay(){
+  var d = new Date();
+  var day = d.getDate();
+
+  if(day%2){
+      outParagraph.innerHTML = "odd";
+  }else{
+      outParagraph.innerHTML = "evan";
+  }
+}
+
+
+setInterval(checkDay, 60000);
+checkDay();
+
+
+
+</script>
